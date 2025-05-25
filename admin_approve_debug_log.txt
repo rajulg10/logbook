@@ -1,0 +1,195 @@
+approve_report called for report_id=9 by user={'id': 1, 'username': 'admin', 'role': 'admin', 'email': 'admin@example.com', 'created_at': '2025-04-26 09:53:05', 'emp_code': '', 'designation': ''}
+approve_report called for report_id=9 by user={'id': 1, 'username': 'admin', 'role': 'admin', 'email': 'admin@example.com', 'created_at': '2025-04-26 09:53:05', 'emp_code': '', 'designation': ''}
+approve_report called for report_id=9 by user={'id': 1, 'username': 'admin', 'role': 'admin', 'email': 'admin@example.com', 'created_at': '2025-04-26 09:53:05', 'emp_code': '', 'designation': ''}
+active_template: [<sqlite3.Row object at 0x10af56590>, <sqlite3.Row object at 0x10af565c0>]
+approve_report called for report_id=9 by user={'id': 1, 'username': 'admin', 'role': 'admin', 'email': 'admin@example.com', 'created_at': '2025-04-26 09:53:05', 'emp_code': '', 'designation': ''}
+active_template: [<sqlite3.Row object at 0x10c666590>, <sqlite3.Row object at 0x10c6665c0>]
+template_path: /Users/rajulgupta/Documents/logbook/templates/template_1745668848_logbook A shift.xlsx
+pdf_path: /Users/rajulgupta/Documents/logbook/approved_reports/report_9_20250427_015321.pdf
+Calling PDFGenerator.generate_report_pdf for report_id=9
+approve_report called for report_id=9 by user={'id': 1, 'username': 'admin', 'role': 'admin', 'email': 'admin@example.com', 'created_at': '2025-04-26 09:53:05', 'emp_code': '', 'designation': ''}
+active_template: [<sqlite3.Row object at 0x10c667250>, <sqlite3.Row object at 0x10c666fb0>]
+template_path: /Users/rajulgupta/Documents/logbook/templates/template_1745668848_logbook A shift.xlsx
+pdf_path: /Users/rajulgupta/Documents/logbook/approved_reports/report_9_20250427_015421.pdf
+Calling PDFGenerator.generate_report_pdf for report_id=9
+approve_report called for report_id=9 by user={'id': 1, 'username': 'admin', 'role': 'admin', 'email': 'admin@example.com', 'created_at': '2025-04-26 09:53:05', 'emp_code': '', 'designation': ''}
+active_template: [<sqlite3.Row object at 0x10a5ea590>, <sqlite3.Row object at 0x10a5ea5c0>]
+template_path: /Users/rajulgupta/Documents/logbook/templates/template_1745668848_logbook A shift.xlsx
+pdf_path: /Users/rajulgupta/Documents/logbook/approved_reports/report_9_20250427_015538.pdf
+Calling PDFGenerator.generate_report_pdf for report_id=9
+approve_report called for report_id=10 by user={'id': 1, 'username': 'admin', 'role': 'admin', 'email': 'admin@example.com', 'created_at': '2025-04-26 09:53:05', 'emp_code': '', 'designation': ''}
+active_template: [<sqlite3.Row object at 0x116c68fd0>, <sqlite3.Row object at 0x116c69000>]
+template_path: /Users/rajulgupta/Documents/logbook/templates/template_1745668848_logbook A shift.xlsx
+pdf_path: /Users/rajulgupta/Documents/logbook/approved_reports/report_10_20250427_123334.pdf
+Calling PDFGenerator.generate_report_pdf for report_id=10
+approve_report called for report_id=10 by user={'id': 1, 'username': 'admin', 'role': 'admin', 'email': 'admin@example.com', 'created_at': '2025-04-26 09:53:05', 'emp_code': '', 'designation': ''}
+active_template: [<sqlite3.Row object at 0x10fb978e0>, <sqlite3.Row object at 0x10fb97910>]
+template_path: /Users/rajulgupta/Documents/logbook/templates/template_1745668848_logbook A shift.xlsx
+pdf_path: /Users/rajulgupta/Documents/logbook/approved_reports/report_10_20250427_130410.pdf
+Calling PDFGenerator.generate_report_pdf for report_id=10
+approve_report called for report_id=10 by user={'id': 1, 'username': 'admin', 'role': 'admin', 'email': 'admin@example.com', 'created_at': '2025-04-26 09:53:05', 'emp_code': '', 'designation': ''}
+active_template: [<sqlite3.Row object at 0x10fb94eb0>, <sqlite3.Row object at 0x12c45b0d0>]
+template_path: /Users/rajulgupta/Documents/logbook/templates/template_1745668848_logbook A shift.xlsx
+pdf_path: /Users/rajulgupta/Documents/logbook/approved_reports/report_10_20250427_130429.pdf
+Calling PDFGenerator.generate_report_pdf for report_id=10
+approve_report called for report_id=10 by user={'id': 1, 'username': 'admin', 'role': 'admin', 'email': 'admin@example.com', 'created_at': '2025-04-26 09:53:05', 'emp_code': '', 'designation': ''}
+active_template: [<sqlite3.Row object at 0x10e08f8e0>, <sqlite3.Row object at 0x10e08f910>]
+template_path: /Users/rajulgupta/Documents/logbook/templates/template_1745668848_logbook A shift.xlsx
+pdf_path: /Users/rajulgupta/Documents/logbook/approved_reports/report_10_20250427_130835.pdf
+Calling PDFGenerator.generate_report_pdf for report_id=10
+approve_report called for report_id=11 by user={'id': 1, 'username': 'admin', 'role': 'admin', 'email': 'admin@example.com', 'created_at': '2025-04-26 09:53:05', 'emp_code': '', 'designation': ''}
+active_template: [<sqlite3.Row object at 0x130b58c70>, <sqlite3.Row object at 0x130b58d30>]
+template_path: /Users/rajulgupta/Documents/logbook/templates/template_1745668848_logbook A shift.xlsx
+pdf_path: /Users/rajulgupta/Documents/logbook/approved_reports/report_11_20250427_135757.pdf
+Calling PDFGenerator.generate_report_pdf for report_id=11
+approve_report called for report_id=12 by user={'id': 1, 'username': 'admin', 'role': 'admin', 'email': 'admin@example.com', 'created_at': '2025-04-26 09:53:05', 'emp_code': '', 'designation': ''}
+active_template: [<sqlite3.Row object at 0x114591240>, <sqlite3.Row object at 0x1145912a0>]
+template_path: /Users/rajulgupta/Documents/logbook/templates/template_1745668848_logbook A shift.xlsx
+pdf_path: /Users/rajulgupta/Documents/logbook/approved_reports/report_12_20250427_140826.pdf
+Calling PDFGenerator.generate_report_pdf for report_id=12
+approve_report called for report_id=13 by user={'id': 1, 'username': 'admin', 'role': 'admin', 'email': 'admin@example.com', 'created_at': '2025-04-26 09:53:05', 'emp_code': '', 'designation': ''}
+active_template: [<sqlite3.Row object at 0x115a492a0>, <sqlite3.Row object at 0x115a49300>]
+template_path: /Users/rajulgupta/Documents/logbook/templates/template_1745668848_logbook A shift.xlsx
+pdf_path: /Users/rajulgupta/Documents/logbook/approved_reports/report_13_20250427_141706.pdf
+Calling PDFGenerator.generate_report_pdf for report_id=13
+approve_report called for report_id=14 by user={'id': 1, 'username': 'admin', 'role': 'admin', 'email': 'admin@example.com', 'created_at': '2025-04-26 09:53:05', 'emp_code': '', 'designation': ''}
+active_template: [<sqlite3.Row object at 0x11053d330>, <sqlite3.Row object at 0x11053d390>]
+template_path: /Users/rajulgupta/Documents/logbook/templates/template_1745668848_logbook A shift.xlsx
+pdf_path: /Users/rajulgupta/Documents/logbook/approved_reports/report_14_20250427_142838.pdf
+Calling PDFGenerator.generate_report_pdf for report_id=14
+approve_report called for report_id=15 by user={'id': 1, 'username': 'admin', 'role': 'admin', 'email': 'admin@example.com', 'created_at': '2025-04-26 09:53:05', 'emp_code': '', 'designation': ''}
+active_template: [<sqlite3.Row object at 0x113511300>, <sqlite3.Row object at 0x113511360>]
+template_path: /Users/rajulgupta/Documents/logbook/templates/template_1745668848_logbook A shift.xlsx
+pdf_path: /Users/rajulgupta/Documents/logbook/approved_reports/report_15_20250427_144820.pdf
+Calling PDFGenerator.generate_report_pdf for report_id=15
+approve_report called for report_id=16 by user={'id': 1, 'username': 'admin', 'role': 'admin', 'email': 'admin@example.com', 'created_at': '2025-04-26 09:53:05', 'emp_code': '', 'designation': ''}
+active_template: [<sqlite3.Row object at 0x13115d300>, <sqlite3.Row object at 0x13115cd60>]
+template_path: /Users/rajulgupta/Documents/logbook/templates/template_1745668848_logbook A shift.xlsx
+pdf_path: /Users/rajulgupta/Documents/logbook/approved_reports/report_16_20250427_145236.pdf
+Calling PDFGenerator.generate_report_pdf for report_id=16
+approve_report called for report_id=17 by user={'id': 1, 'username': 'admin', 'role': 'admin', 'email': 'admin@example.com', 'created_at': '2025-04-26 09:53:05', 'emp_code': '', 'designation': ''}
+active_template: [<sqlite3.Row object at 0x1168dbc40>, <sqlite3.Row object at 0x1168dbe50>]
+template_path: /Users/rajulgupta/Documents/logbook/templates/template_1745668848_logbook A shift.xlsx
+pdf_path: /Users/rajulgupta/Documents/logbook/approved_reports/report_17_20250427_145755.pdf
+Calling PDFGenerator.generate_report_pdf for report_id=17
+approve_report called for report_id=18 by user={'id': 1, 'username': 'admin', 'role': 'admin', 'email': 'admin@example.com', 'created_at': '2025-04-26 09:53:05', 'emp_code': '', 'designation': ''}
+active_template: [<sqlite3.Row object at 0x114711420>, <sqlite3.Row object at 0x114711480>]
+template_path: /Users/rajulgupta/Documents/logbook/templates/template_1745668848_logbook A shift.xlsx
+pdf_path: /Users/rajulgupta/Documents/logbook/approved_reports/report_18_20250427_151629.pdf
+Calling PDFGenerator.generate_report_pdf for report_id=18
+approve_report called for report_id=19 by user={'id': 1, 'username': 'admin', 'role': 'admin', 'email': 'admin@example.com', 'created_at': '2025-04-26 09:53:05', 'emp_code': '', 'designation': ''}
+approve_report called for report_id=19 by user={'id': 1, 'username': 'admin', 'role': 'admin', 'email': 'admin@example.com', 'created_at': '2025-04-26 09:53:05', 'emp_code': '', 'designation': ''}
+active_template: [<sqlite3.Row object at 0x1146ebc40>, <sqlite3.Row object at 0x125bb9600>]
+template_path: /Users/rajulgupta/Documents/logbook/templates/template_1745668848_logbook A shift.xlsx
+pdf_path: /Users/rajulgupta/Documents/logbook/approved_reports/report_19_20250427_152222.pdf
+Calling PDFGenerator.generate_report_pdf for report_id=19
+approve_report called for report_id=20 by user={'id': 1, 'username': 'admin', 'role': 'admin', 'email': 'admin@example.com', 'created_at': '2025-04-26 09:53:05', 'emp_code': '', 'designation': ''}
+active_template: [<sqlite3.Row object at 0x129659510>, <sqlite3.Row object at 0x1296595d0>]
+template_path: /Users/rajulgupta/Documents/logbook/templates/template_1745668848_logbook A shift.xlsx
+pdf_path: /Users/rajulgupta/Documents/logbook/approved_reports/report_20_20250427_160105.pdf
+Calling PDFGenerator.generate_report_pdf for report_id=20
+approve_report called for report_id=21 by user={'id': 1, 'username': 'admin', 'role': 'admin', 'email': 'admin@example.com', 'created_at': '2025-04-26 09:53:05', 'emp_code': '', 'designation': ''}
+active_template: [<sqlite3.Row object at 0x11895d540>, <sqlite3.Row object at 0x11895d570>]
+template_path: /Users/rajulgupta/Documents/logbook/templates/template_1745668848_logbook A shift.xlsx
+pdf_path: /Users/rajulgupta/Documents/logbook/approved_reports/report_21_20250427_162126.pdf
+Calling PDFGenerator.generate_report_pdf for report_id=21
+approve_report called for report_id=24 by user={'id': 1, 'username': 'admin', 'role': 'admin', 'email': 'admin@example.com', 'created_at': '2025-04-26 09:53:05', 'emp_code': '', 'designation': ''}
+active_template: [<sqlite3.Row object at 0x10f73cac0>, <sqlite3.Row object at 0x10f73cb20>]
+template_path: /Users/rajulgupta/Documents/logbook/templates/template_1745668848_logbook A shift.xlsx
+pdf_path: /Users/rajulgupta/Documents/logbook/approved_reports/report_24_20250427_213324.pdf
+Calling PDFGenerator.generate_report_pdf for report_id=24
+approve_report called for report_id=22 by user={'id': 1, 'username': 'admin', 'role': 'admin', 'email': 'admin@example.com', 'created_at': '2025-04-26 09:53:05', 'emp_code': '', 'designation': ''}
+active_template: [<sqlite3.Row object at 0x120be61d0>, <sqlite3.Row object at 0x120be6170>]
+template_path: /Users/rajulgupta/Documents/logbook/templates/template_1745668848_logbook A shift.xlsx
+pdf_path: /Users/rajulgupta/Documents/logbook/approved_reports/report_22_20250428_100219.pdf
+Calling PDFGenerator.generate_report_pdf for report_id=22
+approve_report called for report_id=25 by user={'id': 1, 'username': 'admin', 'role': 'admin', 'email': 'admin@example.com', 'created_at': '2025-04-26 09:53:05', 'emp_code': '', 'designation': ''}
+active_template: [<sqlite3.Row object at 0x117ebd2a0>, <sqlite3.Row object at 0x117ebd360>]
+template_path: /Users/rajulgupta/Documents/logbook/templates/template_1745668848_logbook A shift.xlsx
+pdf_path: /Users/rajulgupta/Documents/logbook/approved_reports/report_25_20250428_110458.pdf
+Calling PDFGenerator.generate_report_pdf for report_id=25
+approve_report called for report_id=27 by user={'id': 1, 'username': 'admin', 'role': 'admin', 'email': 'admin@example.com', 'created_at': '2025-04-26 09:53:05', 'emp_code': '', 'designation': ''}
+active_template: [<sqlite3.Row object at 0x11805e410>, <sqlite3.Row object at 0x11805e2f0>]
+template_path: /Users/rajulgupta/Documents/logbook/templates/template_1745668848_logbook A shift.xlsx
+pdf_path: /Users/rajulgupta/Documents/logbook/approved_reports/report_27_20250429_212012.pdf
+Calling PDFGenerator.generate_report_pdf for report_id=27
+approve_report called for report_id=28 by user={'id': 1, 'username': 'admin', 'role': 'admin', 'email': 'admin@example.com', 'created_at': '2025-04-26 09:53:05', 'emp_code': '', 'designation': ''}
+active_template: [<sqlite3.Row object at 0x12a83a470>, <sqlite3.Row object at 0x12a83a4a0>]
+template_path: /Users/rajulgupta/Documents/logbook/templates/template_1745668848_logbook A shift.xlsx
+pdf_path: /Users/rajulgupta/Documents/logbook/approved_reports/report_28_20250429_221108.pdf
+Calling PDFGenerator.generate_report_pdf for report_id=28
+approve_report called for report_id=26 by user={'id': 1, 'username': 'admin', 'role': 'admin', 'email': 'admin@example.com', 'created_at': '2025-04-26 09:53:05', 'emp_code': '', 'designation': ''}
+active_template: [<sqlite3.Row object at 0x114f59990>, <sqlite3.Row object at 0x114f59b10>]
+template_path: /Users/rajulgupta/Documents/logbook/templates/template_1745668848_logbook A shift.xlsx
+pdf_path: /Users/rajulgupta/Documents/logbook/approved_reports/report_26_20250429_222953.pdf
+Calling PDFGenerator.generate_report_pdf for report_id=26
+approve_report called for report_id=29 by user={'id': 1, 'username': 'admin', 'role': 'admin', 'email': 'admin@example.com', 'created_at': '2025-04-26 09:53:05', 'emp_code': '', 'designation': ''}
+active_template: [<sqlite3.Row object at 0x1121f1720>, <sqlite3.Row object at 0x1121f1690>]
+template_path: /Users/rajulgupta/Documents/logbook/templates/template_1745668848_logbook A shift.xlsx
+pdf_path: /Users/rajulgupta/Documents/logbook/approved_reports/report_29_20250501_193802.pdf
+Calling PDFGenerator.generate_report_pdf for report_id=29
+approve_report called for report_id=23 by user={'id': 1, 'username': 'admin', 'role': 'admin', 'email': 'admin@example.com', 'created_at': '2025-04-26 09:53:05', 'emp_code': '', 'designation': ''}
+active_template: [<sqlite3.Row object at 0x120b48d30>, <sqlite3.Row object at 0x120b48d60>]
+template_path: /Users/rajulgupta/Documents/logbook/templates/template_1745668848_logbook A shift.xlsx
+pdf_path: /Users/rajulgupta/Documents/logbook/approved_reports/report_23_20250501_202052.pdf
+Calling PDFGenerator.generate_report_pdf for report_id=23
+approve_report called for report_id=30 by user={'id': 1, 'username': 'admin', 'role': 'admin', 'email': 'admin@example.com', 'created_at': '2025-04-26 09:53:05', 'emp_code': '', 'designation': ''}
+active_template: [<sqlite3.Row object at 0x11ccb0b20>, <sqlite3.Row object at 0x11ccb0b50>]
+template_path: /Users/rajulgupta/Documents/logbook/templates/template_1745668848_logbook A shift.xlsx
+pdf_path: /Users/rajulgupta/Documents/logbook/approved_reports/report_30_20250501_202405.pdf
+Calling PDFGenerator.generate_report_pdf for report_id=30
+approve_report called for report_id=32 by user={'id': 1, 'username': 'admin', 'role': 'admin', 'email': 'admin@example.com', 'created_at': '2025-04-26 09:53:05', 'emp_code': '', 'designation': ''}
+active_template: [<sqlite3.Row object at 0x11a8e1000>, <sqlite3.Row object at 0x11a8e0fd0>]
+template_path: /Users/rajulgupta/Documents/logbook/templates/template_1745668848_logbook A shift.xlsx
+pdf_path: /Users/rajulgupta/Documents/logbook/approved_reports/report_32_20250501_202919.pdf
+Calling PDFGenerator.generate_report_pdf for report_id=32
+approve_report called for report_id=31 by user={'id': 1, 'username': 'admin', 'role': 'admin', 'email': 'admin@example.com', 'created_at': '2025-04-26 09:53:05', 'emp_code': '', 'designation': ''}
+active_template: [<sqlite3.Row object at 0x10f7b3d30>, <sqlite3.Row object at 0x10f7b3d00>]
+template_path: /Users/rajulgupta/Documents/logbook/templates/template_1745668848_logbook A shift.xlsx
+pdf_path: /Users/rajulgupta/Documents/logbook/approved_reports/report_31_20250501_203335.pdf
+Calling PDFGenerator.generate_report_pdf for report_id=31
+approve_report called for report_id=33 by user={'id': 1, 'username': 'admin', 'role': 'admin', 'email': 'admin@example.com', 'created_at': '2025-04-26 09:53:05', 'emp_code': '', 'designation': ''}
+active_template: [<sqlite3.Row object at 0x10e708910>, <sqlite3.Row object at 0x10e708940>]
+template_path: /Users/rajulgupta/Documents/logbook/templates/template_1745668848_logbook A shift.xlsx
+pdf_path: /Users/rajulgupta/Documents/logbook/approved_reports/report_33_20250501_203606.pdf
+Calling PDFGenerator.generate_report_pdf for report_id=33
+approve_report called for report_id=35 by user={'id': 1, 'username': 'admin', 'role': 'admin', 'email': 'mailrajulgupta@gmail.com', 'created_at': '2025-04-26 09:53:05', 'emp_code': '', 'designation': ''}
+active_template: [<sqlite3.Row object at 0x11565e7d0>, <sqlite3.Row object at 0x11565e800>]
+template_path: /Users/rajulgupta/Documents/logbook/templates/template_1745668848_logbook A shift.xlsx
+pdf_path: /Users/rajulgupta/Documents/logbook/approved_reports/report_35_20250501_214134.pdf
+Calling PDFGenerator.generate_report_pdf for report_id=35
+approve_report called for report_id=34 by user={'id': 1, 'username': 'admin', 'role': 'admin', 'email': 'mailrajulgupta@gmail.com', 'created_at': '2025-04-26 09:53:05', 'emp_code': '', 'designation': ''}
+active_template: [<sqlite3.Row object at 0x116d30dc0>, <sqlite3.Row object at 0x116d30fd0>]
+template_path: /Users/rajulgupta/Documents/logbook/templates/template_1745668848_logbook A shift.xlsx
+pdf_path: /Users/rajulgupta/Documents/logbook/approved_reports/report_34_20250501_214659.pdf
+Calling PDFGenerator.generate_report_pdf for report_id=34
+approve_report called for report_id=36 by user={'id': 1, 'username': 'admin', 'role': 'admin', 'email': 'mailrajulgupta@gmail.com', 'created_at': '2025-04-26 09:53:05', 'emp_code': '', 'designation': ''}
+active_template: [<sqlite3.Row object at 0x11648cfd0>, <sqlite3.Row object at 0x11648d000>]
+template_path: /Users/rajulgupta/Documents/logbook/templates/template_1745668848_logbook A shift.xlsx
+pdf_path: /Users/rajulgupta/Documents/logbook/approved_reports/report_36_20250501_224125.pdf
+Calling PDFGenerator.generate_report_pdf for report_id=36
+approve_report called for report_id=37 by user={'id': 1, 'username': 'admin', 'role': 'admin', 'email': 'mailrajulgupta@gmail.com', 'created_at': '2025-04-26 09:53:05', 'emp_code': '', 'designation': ''}
+active_template: [<sqlite3.Row object at 0x115778160>, <sqlite3.Row object at 0x115778190>]
+template_path: /Users/rajulgupta/Documents/logbook/templates/template_1745668848_logbook A shift.xlsx
+pdf_path: /Users/rajulgupta/Documents/logbook/approved_reports/report_37_20250501_225613.pdf
+Calling PDFGenerator.generate_report_pdf for report_id=37
+approve_report called for report_id=41 by user={'id': 1, 'username': 'admin', 'role': 'admin', 'email': 'mailrajulgupta@gmail.com', 'created_at': '2025-04-26 09:53:05', 'emp_code': '', 'designation': ''}
+active_template: [<sqlite3.Row object at 0x1157e4520>, <sqlite3.Row object at 0x1157e4550>]
+template_path: /Users/rajulgupta/Documents/logbook/templates/template_1745668848_logbook A shift.xlsx
+pdf_path: /Users/rajulgupta/Documents/logbook/approved_reports/report_41_20250509_231354.pdf
+Calling PDFGenerator.generate_report_pdf for report_id=41
+approve_report called for report_id=44 by user={'id': 1, 'username': 'admin', 'role': 'admin', 'email': 'mailrajulgupta@gmail.com', 'created_at': '2025-04-26 09:53:05', 'emp_code': '0000', 'designation': 'Section Head'}
+active_template: [<sqlite3.Row object at 0x1172ffd90>, <sqlite3.Row object at 0x1172ffd60>]
+template_path: /Users/rajulgupta/Documents/logbook/templates/template_1745668848_logbook A shift.xlsx
+pdf_path: /Users/rajulgupta/Documents/logbook/approved_reports/report_44_20250510_114257.pdf
+Calling PDFGenerator.generate_report_pdf for report_id=44
+approve_report called for report_id=47 by user={'id': 1, 'username': 'admin', 'role': 'admin', 'email': 'mailrajulgupta@gmail.com', 'created_at': '2025-04-26 09:53:05', 'emp_code': '0000', 'designation': 'Section Head'}
+active_template: [<sqlite3.Row object at 0x10ecba7a0>, <sqlite3.Row object at 0x10ecba770>]
+template_path: /Users/rajulgupta/Documents/logbook/templates/template_1745668848_logbook A shift.xlsx
+pdf_path: /Users/rajulgupta/Documents/logbook/approved_reports/report_47_20250513_165255.pdf
+Calling PDFGenerator.generate_report_pdf for report_id=47
+approve_report called for report_id=48 by user={'id': 1, 'username': 'Atul San', 'role': 'admin', 'email': 'atul.gupta1@honda.hmsi.in', 'created_at': '2025-04-26 09:53:05', 'emp_code': '0000', 'designation': 'Section Head'}
+active_template: [<sqlite3.Row object at 0x11d7a1f60>, <sqlite3.Row object at 0x11d7a1ed0>]
+template_path: /Users/rajulgupta/Documents/logbook/templates/template_1745668848_logbook A shift.xlsx
+pdf_path: /Users/rajulgupta/Documents/logbook/approved_reports/report_48_20250525_142214.pdf
+Calling PDFGenerator.generate_report_pdf for report_id=48

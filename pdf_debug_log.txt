@@ -1,0 +1,92 @@
+ENTERED PDF GENERATION
+fields_data type: <class 'dict'>, value: {'report_title': '5', 'excel_file_path': '/Users/rajulgupta/Documents/logbook/user_reports/4/report_9_template_1745687761_Logbook B shift.xlsx', 'user_signature': '12289 - Team Leader'}
+ENTERED PDF GENERATION
+fields_data type: <class 'dict'>, value: {'report_title': '5', 'excel_file_path': '/Users/rajulgupta/Documents/logbook/user_reports/4/report_9_template_1745687761_Logbook B shift.xlsx', 'user_signature': '12289 - Team Leader'}
+ENTERED PDF GENERATION
+fields_data type: <class 'dict'>, value: {'report_title': '5', 'excel_file_path': '/Users/rajulgupta/Documents/logbook/user_reports/4/report_9_template_1745687761_Logbook B shift.xlsx', 'user_signature': '12289 - Team Leader'}
+ENTERED PDF GENERATION
+fields_data type: <class 'dict'>, value: {'report_title': '34', 'excel_file_path': '/Users/rajulgupta/Documents/logbook/user_reports/4/report_10_template_1745668848_logbook A shift.xlsx', 'user_signature': '12289 - Team Leader'}
+ENTERED PDF GENERATION
+fields_data type: <class 'dict'>, value: {'report_title': '34', 'excel_file_path': '/Users/rajulgupta/Documents/logbook/user_reports/4/report_10_template_1745668848_logbook A shift.xlsx', 'user_signature': '12289 - Team Leader'}
+ENTERED PDF GENERATION
+fields_data type: <class 'dict'>, value: {'report_title': '34', 'excel_file_path': '/Users/rajulgupta/Documents/logbook/user_reports/4/report_10_template_1745668848_logbook A shift.xlsx', 'user_signature': '12289 - Team Leader'}
+ENTERED PDF GENERATION
+fields_data type: <class 'dict'>, value: {'report_title': '34', 'excel_file_path': '/Users/rajulgupta/Documents/logbook/user_reports/4/report_10_template_1745668848_logbook A shift.xlsx', 'user_signature': '12289 - Team Leader'}
+ENTERED PDF GENERATION
+fields_data type: <class 'dict'>, value: {'report_title': '11', 'excel_file_path': '/Users/rajulgupta/Documents/logbook/user_reports/4/report_11_template_1745668848_logbook A shift.xlsx', 'user_signature': '12289 - Team Leader'}
+ENTERED PDF GENERATION
+fields_data type: <class 'dict'>, value: {'report_title': '44', 'excel_file_path': '/Users/rajulgupta/Documents/logbook/user_reports/4/report_12_template_1745687761_Logbook B shift.xlsx', 'user_signature': '12289 - Team Leader'}
+ENTERED PDF GENERATION
+fields_data type: <class 'dict'>, value: {'report_title': '66', 'excel_file_path': '/Users/rajulgupta/Documents/logbook/user_reports/4/report_13_template_1745668848_logbook A shift.xlsx', 'user_signature': '12289 - Team Leader'}
+ENTERED PDF GENERATION
+fields_data type: <class 'dict'>, value: {'report_title': '32', 'excel_file_path': '/Users/rajulgupta/Documents/logbook/user_reports/4/report_14_template_1745687761_Logbook B shift.xlsx', 'user_signature': '12289 - Team Leader'}
+ENTERED PDF GENERATION
+fields_data type: <class 'dict'>, value: {'report_title': '87', 'excel_file_path': '/Users/rajulgupta/Documents/logbook/user_reports/4/report_15_template_1745668848_logbook A shift.xlsx', 'user_signature': '12289 - Team Leader'}
+ENTERED PDF GENERATION
+fields_data type: <class 'dict'>, value: {'report_title': '88', 'excel_file_path': '/Users/rajulgupta/Documents/logbook/user_reports/4/report_16_template_1745687761_Logbook B shift.xlsx', 'user_signature': '12289 - Team Leader'}
+ENTERED PDF GENERATION
+fields_data type: <class 'dict'>, value: {'report_title': '99', 'excel_file_path': '/Users/rajulgupta/Documents/logbook/user_reports/4/report_17_template_1745668848_logbook A shift.xlsx', 'user_signature': '12289 - Team Leader'}
+ENTERED PDF GENERATION
+fields_data type: <class 'dict'>, value: {'report_title': '77', 'excel_file_path': '/Users/rajulgupta/Documents/logbook/user_reports/4/report_18_template_1745668848_logbook A shift.xlsx', 'user_signature': '12289 - Team Leader'}
+ENTERED PDF GENERATION
+fields_data type: <class 'dict'>, value: {'report_title': '67', 'excel_file_path': '/Users/rajulgupta/Documents/logbook/user_reports/4/report_19_template_1745668848_logbook A shift.xlsx', 'user_signature': '12289 - Team Leader'}
+DEBUG: user_excel_path='/Users/rajulgupta/Documents/logbook/user_reports/4/report_20_template_1745668848_logbook A shift.xlsx', exists=True
+DEBUG: Successfully copied user Excel to temp: /var/folders/98/whzyfpn93wg5vzr9cztqmq040000gn/T/report_20.xlsx
+DEBUG: user_excel_path='/Users/rajulgupta/Documents/logbook/user_reports/4/report_21_template_1745668848_logbook A shift.xlsx', exists=True
+DEBUG: Successfully copied user Excel to temp: /var/folders/98/whzyfpn93wg5vzr9cztqmq040000gn/T/report_21.xlsx
+DEBUG: user_excel_path='/Users/rajulgupta/Documents/logbook/user_reports/6/report_24_template_1745668848_logbook A shift.xlsx', exists=True
+DEBUG: Successfully copied user Excel to temp: /var/folders/98/whzyfpn93wg5vzr9cztqmq040000gn/T/report_24.xlsx
+DEBUG: user_excel_path='/Users/rajulgupta/Documents/logbook/user_reports/4/report_22_template_1745668848_logbook A shift.xlsx', exists=True
+DEBUG: Successfully copied user Excel to temp: /var/folders/98/whzyfpn93wg5vzr9cztqmq040000gn/T/report_22.xlsx
+DEBUG: user_excel_path='/Users/rajulgupta/Documents/logbook/user_reports/6/report_25_template_1745668848_logbook A shift.xlsx', exists=True
+DEBUG: Successfully copied user Excel to temp: /var/folders/98/whzyfpn93wg5vzr9cztqmq040000gn/T/report_25.xlsx
+DEBUG: user_excel_path='/Users/rajulgupta/Documents/logbook/user_reports/4/report_27_template_1745668848_logbook A shift.xlsx', exists=True
+DEBUG: Successfully copied user Excel to temp: /var/folders/98/whzyfpn93wg5vzr9cztqmq040000gn/T/report_27.xlsx
+DEBUG: user_excel_path='/Users/rajulgupta/Documents/logbook/user_reports/4/report_28_template_1745668848_logbook A shift.xlsx', exists=True
+DEBUG: Successfully copied user Excel to temp: /var/folders/98/whzyfpn93wg5vzr9cztqmq040000gn/T/report_28.xlsx
+DEBUG: user_excel_path='/Users/rajulgupta/Documents/logbook/user_reports/6/report_26_template_1745668848_logbook A shift.xlsx', exists=True
+DEBUG: Successfully copied user Excel to temp: /var/folders/98/whzyfpn93wg5vzr9cztqmq040000gn/T/report_26.xlsx
+DEBUG: user_excel_path='/Users/rajulgupta/Documents/logbook/user_reports/6/report_29_template_1745668848_logbook A shift.xlsx', exists=True
+DEBUG: Successfully copied user Excel to temp: /var/folders/98/whzyfpn93wg5vzr9cztqmq040000gn/T/report_29.xlsx
+DEBUG: user_excel_path='/Users/rajulgupta/Documents/logbook/user_reports/4/report_23_template_1745668848_logbook A shift.xlsx', exists=True
+DEBUG: Successfully copied user Excel to temp: /var/folders/98/whzyfpn93wg5vzr9cztqmq040000gn/T/report_23.xlsx
+DEBUG: user_excel_path='/Users/rajulgupta/Documents/logbook/user_reports/6/report_30_template_1745687761_Logbook B shift.xlsx', exists=True
+DEBUG: Successfully copied user Excel to temp: /var/folders/98/whzyfpn93wg5vzr9cztqmq040000gn/T/report_30.xlsx
+DEBUG: user_excel_path='/Users/rajulgupta/Documents/logbook/user_reports/7/report_32_template_1745687761_Logbook B shift.xlsx', exists=True
+DEBUG: Successfully copied user Excel to temp: /var/folders/98/whzyfpn93wg5vzr9cztqmq040000gn/T/report_32.xlsx
+DEBUG: user_excel_path='/Users/rajulgupta/Documents/logbook/user_reports/6/report_31_template_1745687761_Logbook B shift.xlsx', exists=True
+DEBUG: Successfully copied user Excel to temp: /var/folders/98/whzyfpn93wg5vzr9cztqmq040000gn/T/report_31.xlsx
+DEBUG: user_excel_path='/Users/rajulgupta/Documents/logbook/user_reports/6/report_33_template_1745687761_Logbook B shift.xlsx', exists=True
+DEBUG: Successfully copied user Excel to temp: /var/folders/98/whzyfpn93wg5vzr9cztqmq040000gn/T/report_33.xlsx
+DEBUG: user_excel_path='/Users/rajulgupta/Documents/logbook/user_reports/7/report_35_template_1745668848_logbook A shift.xlsx', exists=True
+DEBUG: Successfully copied user Excel to temp: /var/folders/98/whzyfpn93wg5vzr9cztqmq040000gn/T/report_35.xlsx
+DEBUG: user_excel_path='/Users/rajulgupta/Documents/logbook/user_reports/6/report_34_template_1745687761_Logbook B shift.xlsx', exists=True
+DEBUG: Successfully copied user Excel to temp: /var/folders/98/whzyfpn93wg5vzr9cztqmq040000gn/T/report_34.xlsx
+DEBUG: user_excel_path='/Users/rajulgupta/Documents/logbook/user_reports/6/report_36_template_1746116919_Logbook B Shift.xlsx', exists=True
+DEBUG: Successfully copied user Excel to temp: /var/folders/98/whzyfpn93wg5vzr9cztqmq040000gn/T/report_36.xlsx
+DEBUG: user_excel_path='/Users/rajulgupta/Documents/logbook/user_reports/6/report_37_template_1746116919_Logbook B Shift.xlsx', exists=True
+DEBUG: Successfully copied user Excel to temp: /var/folders/98/whzyfpn93wg5vzr9cztqmq040000gn/T/report_37.xlsx
+DEBUG: user_excel_path='/Users/rajulgupta/Documents/logbook/user_reports/6/report_37_template_1746116919_Logbook B Shift.xlsx', exists=True
+DEBUG: Successfully copied user Excel to temp: /var/folders/98/whzyfpn93wg5vzr9cztqmq040000gn/T/report_37.xlsx
+DEBUG: user_excel_path='/Users/rajulgupta/Documents/logbook/user_reports/7/report_38_template_1746116919_Logbook B Shift.xlsx', exists=True
+DEBUG: Successfully copied user Excel to temp: /var/folders/98/whzyfpn93wg5vzr9cztqmq040000gn/T/report_38.xlsx
+DEBUG: user_excel_path='/Users/rajulgupta/Documents/logbook/user_reports/6/report_41_template_1746116919_Logbook B Shift.xlsx', exists=True
+DEBUG: Successfully copied user Excel to temp: /var/folders/98/whzyfpn93wg5vzr9cztqmq040000gn/T/report_41.xlsx
+DEBUG: user_excel_path='/Users/rajulgupta/Documents/logbook/user_reports/6/report_42_template_1745668848_logbook A shift.xlsx', exists=True
+DEBUG: Successfully copied user Excel to temp: /var/folders/98/whzyfpn93wg5vzr9cztqmq040000gn/T/report_42.xlsx
+DEBUG: user_excel_path='/Users/rajulgupta/Documents/logbook/user_reports/6/report_42_template_1745668848_logbook A shift.xlsx', exists=True
+DEBUG: Successfully copied user Excel to temp: /var/folders/98/whzyfpn93wg5vzr9cztqmq040000gn/T/report_42.xlsx
+DEBUG: user_excel_path='/Users/rajulgupta/Documents/logbook/user_reports/4/report_43_template_1745668848_logbook A shift.xlsx', exists=True
+DEBUG: Successfully copied user Excel to temp: /var/folders/98/whzyfpn93wg5vzr9cztqmq040000gn/T/report_43.xlsx
+DEBUG: user_excel_path='/Users/rajulgupta/Documents/logbook/user_reports/4/report_44_template_1746116919_Logbook B Shift.xlsx', exists=True
+DEBUG: Successfully copied user Excel to temp: /var/folders/98/whzyfpn93wg5vzr9cztqmq040000gn/T/report_44.xlsx
+DEBUG: user_excel_path='/Users/rajulgupta/Documents/logbook/user_reports/4/report_44_template_1746116919_Logbook B Shift.xlsx', exists=True
+DEBUG: Successfully copied user Excel to temp: /var/folders/98/whzyfpn93wg5vzr9cztqmq040000gn/T/report_44.xlsx
+DEBUG: user_excel_path='/Users/rajulgupta/Documents/logbook/user_reports/4/report_45_template_1746116919_Logbook B Shift.xlsx', exists=True
+DEBUG: Successfully copied user Excel to temp: /var/folders/98/whzyfpn93wg5vzr9cztqmq040000gn/T/report_45.xlsx
+DEBUG: user_excel_path='/Users/rajulgupta/Documents/logbook/user_reports/4/report_46_template_1745668848_logbook A shift.xlsx', exists=True
+DEBUG: Successfully copied user Excel to temp: /var/folders/98/whzyfpn93wg5vzr9cztqmq040000gn/T/report_46.xlsx
+DEBUG: user_excel_path='/Users/rajulgupta/Documents/logbook/user_reports/4/report_47_template_1745668848_logbook A shift.xlsx', exists=True
+DEBUG: Successfully copied user Excel to temp: /var/folders/98/whzyfpn93wg5vzr9cztqmq040000gn/T/report_47.xlsx
+DEBUG: user_excel_path='/Users/rajulgupta/Documents/logbook/user_reports/4/report_48_template_1745668848_logbook A shift.xlsx', exists=True
+DEBUG: Successfully copied user Excel to temp: /var/folders/98/whzyfpn93wg5vzr9cztqmq040000gn/T/report_48.xlsx

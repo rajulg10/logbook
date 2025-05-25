@@ -2,7 +2,7 @@ PyQt5==5.15.6
 openpyxl==3.0.10
 reportlab==3.6.9
 passlib==1.7.4
-pillow==9.0.1
+Pillow==9.0.1
 PyPDF2==2.10.5
 python-dotenv==0.20.0
 Flask==2.2.5

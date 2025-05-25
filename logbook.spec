@@ -2,12 +2,17 @@
 
 block_cipher = None
 
+from PyInstaller.utils.hooks import collect_data_files, collect_submodules
+
+hiddenimports = collect_submodules('PyQt5')
+datas = collect_data_files('PyQt5')
+
 a = Analysis(
     ['main.py'],
     pathex=[],
     binaries=[],
-    datas=[],
-    hiddenimports=['PyQt5', 'PyQt5.QtWidgets', 'PyQt5.QtGui', 'PyQt5.QtCore'],
+    datas=datas,
+    hiddenimports=hiddenimports,
     hookspath=[],
     hooksconfig={},
     runtime_hooks=[],

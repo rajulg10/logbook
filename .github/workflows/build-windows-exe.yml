@@ -26,9 +26,9 @@ jobs:
         pip install -r requirements.txt
         pip install pyinstaller
 
-    - name: Build with PyInstaller
+    - name: Build with PyInstaller (spec file)
       run: |
-        pyinstaller --onefile main.py
+        pyinstaller logbook.spec
 
     - name: Upload EXE artifact
       uses: actions/upload-artifact@v4

@@ -1,0 +1,190 @@
+!define PRODUCT_NAME "Logbook"
+!define PRODUCT_VERSION "1.0.0"
+!define PRODUCT_PUBLISHER "Your Company"
+!define PRODUCT_WEB_SITE "https://yourcompany.com"
+
+; Registry key
+!define REGKEY "Software\\${PRODUCT_NAME}"
+
+; Installer Settings
+OutFile "LogbookSetup.exe"
+InstallDir "$PROGRAMFILES64\\${PRODUCT_NAME}"
+InstallDirRegKey HKCU "${REGKEY}" "Install_Dir"
+Name "${PRODUCT_NAME}"
+
+; Variables
+Var StartMenuGroup
+Var StartMenuDir
+Var DesktopIcon
+Var StartMenuIcon
+
+; Installer Sections
+Section "Main Application" SEC01
+    ; Create installation directory
+    CreateDirectory "$INSTDIR"
+    
+    ; Set output path
+    SetOutPath "$INSTDIR"
+    
+    ; Copy main executable
+    File "/oname=Logbook.exe" "dist\\Logbook.exe"
+    
+    ; Copy configuration file
+    File "/oname=.env" ".env"
+    
+    ; Create required directories
+    CreateDirectory "$INSTDIR\\admin_all_reports"
+    CreateDirectory "$INSTDIR\\approved_reports"
+    CreateDirectory "$INSTDIR\\user_reports"
+    CreateDirectory "$INSTDIR\\db"
+    CreateDirectory "$INSTDIR\\pdf"
+    CreateDirectory "$INSTDIR\\templates"
+    
+    ; Create uninstaller
+    WriteUninstaller "$INSTDIR\\uninstall.exe"
+    
+    ; Create registry entries
+    WriteRegStr HKCU "${REGKEY}" "Install_Dir" "$INSTDIR"
+    WriteRegStr HKCU "${REGKEY}" "Version" "${PRODUCT_VERSION}"
+    
+    ; Create shortcuts
+    CreateDirectory "$SMPROGRAMS\\${PRODUCT_NAME}"
+    CreateShortCut "$SMPROGRAMS\\${PRODUCT_NAME}\\${PRODUCT_NAME}.lnk" "$INSTDIR\\Logbook.exe" "" "$INSTDIR\\Logbook.exe" 0
+    CreateShortCut "$DESKTOP\\${PRODUCT_NAME}.lnk" "$INSTDIR\\Logbook.exe" "" "$INSTDIR\\Logbook.exe" 0
+    
+    ; Register update service
+    nsExec::Exec '"$INSTDIR\\Logbook.exe" --register-update'
+    Pop $0
+    StrCmp $0 "error" 0 +2
+        MessageBox MB_OK|MB_ICONEXCLAMATION "Failed to register update service"
+SectionEnd
+
+; Uninstaller Section
+Section "Uninstaller"
+    ; Delete files
+    Delete "$INSTDIR\\Logbook.exe"
+    Delete "$INSTDIR\\.env"
+    Delete "$INSTDIR\\uninstall.exe"
+    
+    ; Delete directories
+    RMDir /r "$INSTDIR\\admin_all_reports"
+    RMDir /r "$INSTDIR\\approved_reports"
+    RMDir /r "$INSTDIR\\user_reports"
+    RMDir /r "$INSTDIR\\db"
+    RMDir /r "$INSTDIR\\pdf"
+    RMDir /r "$INSTDIR\\templates"
+    
+    ; Delete shortcuts
+    Delete "$SMPROGRAMS\\${PRODUCT_NAME}\\${PRODUCT_NAME}.lnk"
+    Delete "$DESKTOP\\${PRODUCT_NAME}.lnk"
+    
+    ; Remove installer directory
+    RMDir "$INSTDIR"
+    
+    ; Remove Start Menu folder
+    RMDir "$SMPROGRAMS\\${PRODUCT_NAME}"
+    
+    ; Remove registry entries
+    DeleteRegKey HKCU "${REGKEY}"
+    
+    ; Unregister update service
+    nsExec::Exec '"$INSTDIR\\Logbook.exe" --unregister-update'
+SectionEnd
+
+; Installer Settings
+OutFile "LogbookSetup.exe"
+InstallDir "$PROGRAMFILES64\\${PRODUCT_NAME}"
+InstallDirRegKey HKCU "Software\\${PRODUCT_NAME}" "Install_Dir"
+Name "${PRODUCT_NAME}"
+
+; Default installation folder
+InstallDir "$PROGRAMFILES64\\${PRODUCT_NAME}"
+
+; Registry key to check for previous installation
+!define REGKEY "Software\\${PRODUCT_NAME}"
+
+; Variables
+Var StartMenuGroup
+Var StartMenuDir
+Var DesktopIcon
+Var StartMenuIcon
+
+; Functions
+Function .onInit
+    ReadRegStr $0 HKCU "${REGKEY}" "Install_Dir"
+    StrCmp $0 "" 0 +3
+        CreateDirectory "$PROGRAMFILES64\\${PRODUCT_NAME}"
+        StrCpy $0 "$PROGRAMFILES64\\${PRODUCT_NAME}"
+    StrCpy $INSTDIR $0
+FunctionEnd
+
+Section "Main Application" SEC01
+    ; Create installation directory
+    CreateDirectory "$INSTDIR"
+    
+    ; Set output path
+    SetOutPath "$INSTDIR"
+    
+    ; Copy main executable
+    File "/oname=Logbook.exe" "dist\\Logbook.exe"
+    
+    ; Copy configuration file
+    File "/oname=.env" ".env"
+    
+    ; Create required directories
+    CreateDirectory "$INSTDIR\\admin_all_reports"
+    CreateDirectory "$INSTDIR\\approved_reports"
+    CreateDirectory "$INSTDIR\\user_reports"
+    CreateDirectory "$INSTDIR\\db"
+    CreateDirectory "$INSTDIR\\pdf"
+    CreateDirectory "$INSTDIR\\templates"
+    
+    ; Create uninstaller
+    WriteUninstaller "$INSTDIR\\uninstall.exe"
+    
+    ; Create registry entries
+    WriteRegStr HKCU "${REGKEY}" "Install_Dir" "$INSTDIR"
+    WriteRegStr HKCU "${REGKEY}" "Version" "${PRODUCT_VERSION}"
+    
+    ; Create shortcuts
+    CreateDirectory "$SMPROGRAMS\\${PRODUCT_NAME}"
+    CreateShortCut "$SMPROGRAMS\\${PRODUCT_NAME}\\${PRODUCT_NAME}.lnk" "$INSTDIR\\Logbook.exe" "" "$INSTDIR\\Logbook.exe" 0
+    CreateShortCut "$DESKTOP\\${PRODUCT_NAME}.lnk" "$INSTDIR\\Logbook.exe" "" "$INSTDIR\\Logbook.exe" 0
+    
+    ; Register update service
+    nsExec::Exec '"$INSTDIR\\Logbook.exe" --register-update'
+    Pop $0
+    StrCmp $0 "error" 0 +2
+        MessageBox MB_OK|MB_ICONEXCLAMATION "Failed to register update service"
+SectionEnd
+
+Section "Uninstaller"
+    ; Delete files
+    Delete "$INSTDIR\\Logbook.exe"
+    Delete "$INSTDIR\\.env"
+    Delete "$INSTDIR\\uninstall.exe"
+    
+    ; Delete directories
+    RMDir /r "$INSTDIR\\admin_all_reports"
+    RMDir /r "$INSTDIR\\approved_reports"
+    RMDir /r "$INSTDIR\\user_reports"
+    RMDir /r "$INSTDIR\\db"
+    RMDir /r "$INSTDIR\\pdf"
+    RMDir /r "$INSTDIR\\templates"
+    
+    ; Delete shortcuts
+    Delete "$SMPROGRAMS\\${PRODUCT_NAME}\\${PRODUCT_NAME}.lnk"
+    Delete "$DESKTOP\\${PRODUCT_NAME}.lnk"
+    
+    ; Remove installer directory
+    RMDir "$INSTDIR"
+    
+    ; Remove Start Menu folder
+    RMDir "$SMPROGRAMS\\${PRODUCT_NAME}"
+    
+    ; Remove registry entries
+    DeleteRegKey HKCU "${REGKEY}"
+    
+    ; Unregister update service
+    nsExec::Exec '"$INSTDIR\\Logbook.exe" --unregister-update'
+SectionEnd

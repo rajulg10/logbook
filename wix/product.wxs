@@ -1,0 +1,173 @@
+<?xml version='1.0' encoding='windows-1252'?>
+<Wix xmlns='http://schemas.microsoft.com/wix/2006/wi'>
+    <Product Id='*' Name='Logbook Application' Language='1033' Version='1.0.0.0' Manufacturer='Your Company' UpgradeCode='c517b7ab-6c19-4c70-bb91-32e7c1e93be4'>
+        <Package InstallerVersion='200' Compressed='yes' InstallScope='perMachine' InstallerAttributes='msiexec' />
+
+        <!-- Custom Properties -->
+        <Property Id="INSTALLDESKTOPSHORTCUT" Value="1" />
+        <Property Id="INSTALLSTARTMENUSHORTCUT" Value="1" />
+        <Property Id="INSTALLSAMPLEDATA" Value="1" />
+
+        <!-- Major Upgrade -->
+        <MajorUpgrade 
+            DowngradeErrorMessage='A newer version of [ProductName] is already installed.'
+            AllowDowngrades='no'
+            AllowSameVersionUpgrades='yes'
+            Schedule='afterInstallInitialize' />
+
+        <!-- Custom Actions -->
+        <CustomAction Id="RegisterUpdateService" 
+                      Directory="INSTALLDIR" 
+                      ExeCommand="[INSTALLDIR]Logbook.exe --register-update"
+                      Execute="deferred"
+                      Return="check" />
+
+        <CustomAction Id="UnregisterUpdateService" 
+                      Directory="INSTALLDIR" 
+                      ExeCommand="[INSTALLDIR]Logbook.exe --unregister-update"
+                      Execute="deferred"
+                      Return="check" />
+
+        <InstallExecuteSequence>
+            <Custom Action="RegisterUpdateService" Before="InstallFinalize">NOT Installed</Custom>
+            <Custom Action="UnregisterUpdateService" Before="RemoveFiles">REMOVE="ALL"</Custom>
+        </InstallExecuteSequence>
+
+        <!-- Features -->
+        <Feature Id="Complete" Title="Complete Installation" Level="1" ConfigurableDirectory="INSTALLDIR">
+            <Feature Id="MainApplication" Title="Main Application" Level="1">
+                <ComponentGroupRef Id="ProductComponents" />
+            </Feature>
+            <Feature Id="SampleData" Title="Sample Data" Level="1000">
+                <ComponentRef Id="SampleDataComponent" />
+            </Feature>
+        </Feature>
+
+        <!-- UI Configuration -->
+        <UI>
+            <UIRef Id="WixUI_InstallDir" />
+            <UIRef Id="WixUI_Advanced" />
+            
+            <Publish Dialog="CustomizeDlg" Control="Next" Event="NewDialog" Value="VerifyReadyDlg" Order="2">1</Publish>
+            
+            <Publish Dialog="VerifyReadyDlg" Control="Back" Event="NewDialog" Value="CustomizeDlg" Order="2">1</Publish>
+        </UI>
+
+        <WixVariable Id="WixUILicenseRtf" Value="wix\license.rtf" />
+        <WixVariable Id="WixUIBannerBmp" Value="wix\icons\banner.bmp" />
+        <WixVariable Id="WixUIDialogBmp" Value="wix\icons\dialog.bmp" />
+        <Icon Id="Logbook.ico" SourceFile="wix\icons\Logbook.ico" />
+        <Property Id="ARPPRODUCTICON" Value="Logbook.ico" />
+
+        <!-- Upgrade Code -->
+        <Upgrade Id="c517b7ab-6c19-4c70-bb91-32e7c1e93be4">
+            <UpgradeVersion
+                Minimum="1.0.0.0"
+                Maximum="99.0.0.0"
+                Property="PREVIOUSFOUND"
+                IncludeMinimum="yes"
+                IncludeMaximum="no" />
+        </Upgrade>
+
+        <!-- Properties for uninstall -->
+        <Property Id="INSTALLLOCATION" Value="[INSTALLDIR]" />
+        <Property Id="UNINSTALL" Value="[SystemFolder]msiexec.exe" />
+        <Property Id="UNINSTALLARGS" Value="/x {ProductCode} /qn" />
+
+        <!-- Uninstall shortcut -->
+        <Directory Id="TARGETDIR" Name="SourceDir">
+            <Directory Id="ProgramFilesFolder">
+                <Directory Id="INSTALLDIR" Name="Logbook">
+                    <!-- Application files will be added here -->
+                </Directory>
+            </Directory>
+            <Directory Id="ProgramMenuFolder">
+                <Directory Id="ApplicationProgramsFolder" Name="Logbook">
+                    <Component Id="UninstallShortcut" Guid="c517b7ab-6c19-4c70-bb91-32e7c1e93be4">
+                        <Shortcut Id="UninstallProgram"
+                                Name="Uninstall Logbook"
+                                Description="Uninstall Logbook Application"
+                                Target="[SystemFolder]msiexec.exe"
+                                Arguments="/x [ProductCode] /qn"
+                                WorkingDirectory="INSTALLDIR"
+                                Icon="Logbook.ico" />
+                        <RemoveFolder Id="ApplicationProgramsFolder" On="uninstall" />
+                        <RegistryValue Root="HKCU" Key="Software\Logbook\Uninstall" Name="installed" Type="integer" Value="1" KeyPath="yes" />
+                    </Component>
+                </Directory>
+            </Directory>
+        </Directory>
+
+        <!-- Update Feature -->
+        <Feature Id="UpdateFeature" Title="Automatic Updates" Level="1">
+            <Component Id="UpdateComponent" Guid="c517b7ab-6c19-4c70-bb91-32e7c1e93be4" Directory="INSTALLDIR">
+                <File Id="Updater" Name="LogbookUpdater.exe" Source="updater\LogbookUpdater.exe" KeyPath="yes" />
+                <ServiceInstall Id="UpdateService"
+                                Type="ownProcess"
+                                Name="LogbookUpdateService"
+                                DisplayName="Logbook Update Service"
+                                Description="Logbook Automatic Update Service"
+                                Start="auto"
+                                Account="LocalSystem"
+                                ErrorControl="normal"
+                                Interactive="no" />
+                <ServiceControl Id="UpdateServiceControl"
+                                Name="LogbookUpdateService"
+                                Start="install"
+                                Stop="both"
+                                Remove="uninstall"
+                                Wait="yes" />
+            </Component>
+        </Feature>
+    </Product>
+
+    <Fragment>
+        <Directory Id='TARGETDIR' Name='SourceDir'>
+            <Directory Id='ProgramFilesFolder'>
+                <Directory Id='INSTALLDIR' Name='Logbook'>
+                    <!-- Application files will be added here -->
+                </Directory>
+            </Directory>
+            <Directory Id='ProgramMenuFolder'>
+                <Directory Id='ApplicationProgramsFolder' Name='Logbook' />
+            </Directory>
+        </Directory>
+    </Fragment>
+
+    <Fragment>
+        <ComponentGroup Id='ProductComponents' Directory='INSTALLDIR'>
+            <Component Id='MainExecutable' Guid='8c1a1624-57dd-4cbf-a7fa-ac203ea9e951'>
+                <File Id='MainExe' Name='Logbook.exe' Source='dist\Logbook.exe' KeyPath='yes' />
+                <Shortcut Id='startmenuLogbook' Directory='ApplicationProgramsFolder' Name='Logbook' 
+                         WorkingDirectory='INSTALLDIR' Icon='Logbook.ico' IconIndex='0' Advertise='yes' />
+                <Shortcut Id='desktopLogbook' Directory='DesktopFolder' Name='Logbook' 
+                         WorkingDirectory='INSTALLDIR' Icon='Logbook.ico' IconIndex='0' Advertise='yes' />
+            </Component>
+
+            <!-- Add other required files -->
+            <Component Id='ConfigFile' Guid='8c1a1624-57dd-4cbf-a7fa-ac203ea9e951'>
+                <File Id='ConfigFile' Name='.env' Source='.env' />
+            </Component>
+
+            <!-- Add required directories -->
+            <Component Id='ReportsDir' Guid='8c1a1624-57dd-4cbf-a7fa-ac203ea9e951'>
+                <CreateFolder />
+                <Directory Id='AdminReportsDir' Name='admin_all_reports'>
+                    <CreateFolder />
+                </Directory>
+                <Directory Id='ApprovedReportsDir' Name='approved_reports'>
+                    <CreateFolder />
+                </Directory>
+                <Directory Id='UserReportsDir' Name='user_reports'>
+                    <CreateFolder />
+                </Directory>
+                <Directory Id='DbDir' Name='db'>
+                    <CreateFolder />
+                </Directory>
+                <Directory Id='PdfDir' Name='pdf'>
+                    <CreateFolder />
+                </Directory>
+            </Component>
+        </ComponentGroup>
+    </Fragment>
+</Wix>
